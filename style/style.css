@@ -35,6 +35,21 @@ img{
     display: none;
 }
 
+.heart{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: white;
+
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
 /* cambio immagine al passaggio del mouse */
 .container:hover .show{
     display:none;
