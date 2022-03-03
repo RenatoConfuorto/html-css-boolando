@@ -4,11 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* UTILS */
+.f-s-75{
+    font-size: 0.75em;
+}
 .row{
     width: 70%;
     max-width: 700px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
     margin: 20px auto;
 }
@@ -16,9 +19,13 @@
 /* singola cella prodotto */
 .product{
     width: calc((100%/3) - 3px);
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
 
     display: inline-block;
+}
+
+.container{
+    position: relative;
 }
 
 img{
@@ -27,10 +34,43 @@ img{
 .hidden{
     display: none;
 }
+
 /* cambio immagine al passaggio del mouse */
 .container:hover .show{
     display:none;
 }
 .container:hover .hidden{
     display: inline-block;
+}
+
+/* style info */
+
+.price{
+    color: red;
+}
+
+.price > span{
+    color: black;
+    text-decoration: line-through;
+}
+
+/*style etichette*/
+.lable{
+    font-weight: bold;
+    font-size: 0.6em;
+    color: white;
+    margin-right: 0px;
+    padding: 2px;
+
+}
+.discount{
+    background-color: red;
+}
+.sust{
+    background-color: green;
+}
+/*posizione etichette*/
+.container > div{
+    position: absolute;
+    bottom: 1em;
 }
