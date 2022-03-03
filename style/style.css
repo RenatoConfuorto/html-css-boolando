@@ -1,0 +1,36 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    width: 70%;
+    max-width: 700px;
+    border: 1px solid black;
+
+    margin: 20px auto;
+}
+
+/* singola cella prodotto */
+.product{
+    width: calc((100%/3) - 3px);
+    border: 1px solid orange;
+
+    display: inline-block;
+}
+
+img{
+    width: 100%;
+}
+.hidden{
+    display: none;
+}
+/* cambio immagine al passaggio del mouse */
+.container:hover .show{
+    display:none;
+}
+.container:hover .hidden{
+    display: inline-block;
+}
