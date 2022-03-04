@@ -93,7 +93,7 @@ img{
     background-color: green;
 }
 /*posizione etichette*/
-.container > div{
+.lables{
     position: absolute;
     bottom: 1em;
 }
